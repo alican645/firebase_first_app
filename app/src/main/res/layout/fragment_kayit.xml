@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitFragment">
+
+    <EditText
+        android:id="@+id/kullaniciadiKayitEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pleaseUsername"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/isimKayitEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/pleaseName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/kullaniciadiKayitEdt"
+        app:layout_constraintStart_toStartOf="@+id/kullaniciadiKayitEdt"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciadiKayitEdt" />
+
+    <EditText
+        android:id="@+id/soyisimKayitEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/pleaseSurname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/isimKayitEdt"
+        app:layout_constraintStart_toStartOf="@+id/isimKayitEdt"
+        app:layout_constraintTop_toBottomOf="@+id/isimKayitEdt" />
+
+    <Button
+        android:id="@+id/kayitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/signup"
+        app:layout_constraintEnd_toEndOf="@+id/sifreKayitEdt2"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/sifreKayitEdt2"
+        app:layout_constraintTop_toBottomOf="@+id/sifreKayitEdt2" />
+
+    <EditText
+        android:id="@+id/emailKayitEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/pleaseEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/soyisimKayitEdt"
+        app:layout_constraintStart_toStartOf="@+id/soyisimKayitEdt"
+        app:layout_constraintTop_toBottomOf="@+id/soyisimKayitEdt" />
+
+    <EditText
+        android:id="@+id/sifreKayitEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/pleasePassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailKayitEdt"
+        app:layout_constraintStart_toStartOf="@+id/emailKayitEdt"
+        app:layout_constraintTop_toBottomOf="@+id/emailKayitEdt" />
+
+    <EditText
+        android:id="@+id/sifreKayitEdt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/pleasePassword2"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/sifreKayitEdt"
+        app:layout_constraintStart_toStartOf="@+id/sifreKayitEdt"
+        app:layout_constraintTop_toBottomOf="@+id/sifreKayitEdt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

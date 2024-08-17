@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Firabase Fotograf Uygulamasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pleaseUsername">Kulanıcı Adı Belirleyiniz</string>
+    <string name="pleaseEmail">E-mail Adresini Giriniz</string>
+    <string name="pleasePassword">Şifrenizi Giriniz</string>
+    <string name="pleasePassword2">Şifrenizi Onaylayınız</string>
+    <string name="pleaseName">Adınızı Giriniz</string>
+    <string name="pleaseSurname">Soyadınızı Giriniz</string>
+    <string name="signup">Kayıt Ol</string>
+    <string name="login">Giriş Yap</string>
+    <string name="comment">Yorumunuzu Ekleyebilirsiniz</string>
+    <string name="share">Paylaş</string>
+    <string name="pp">Profil Fotoğrafı:</string>
+
+</resources>

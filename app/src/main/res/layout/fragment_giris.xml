@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/girisFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GirisFragment">
+
+
+    <EditText
+        android:id="@+id/emailEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pleaseEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/sifreEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/pleasePassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailEdt"
+        app:layout_constraintStart_toStartOf="@+id/emailEdt"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEdt"
+        app:layout_constraintEnd_toEndOf="@+id/emailEdt"
+        app:layout_constraintStart_toStartOf="@+id/emailEdt"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıtlı Değil misiniz ?"
+        app:layout_constraintStart_toStartOf="@+id/sifreEdt"
+        app:layout_constraintTop_toBottomOf="@+id/sifreEdt" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toKayitFragment"
+        android:text="Kayıt Olun!"
+        android:textColor="@color/signupTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/sifreEdt"
+        app:layout_constraintTop_toBottomOf="@+id/sifreEdt" />
+
+    <Button
+        android:id="@+id/girisBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/sifreEdt"
+        app:layout_constraintStart_toStartOf="@+id/sifreEdt"
+        app:layout_constraintTop_toBottomOf="@+id/sifreEdt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
